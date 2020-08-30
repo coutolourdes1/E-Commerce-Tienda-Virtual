@@ -13,38 +13,60 @@
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
-  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
-<body>
+<body background="img/cover_back.png">
   <div class="modal-dialog text-center">
-    <div class="col-sm-8 box_login">
+    <div class="col-sm-7 box_login">
       <div class="modal-content">
-        <div class="col-12">
-            <img src="img/login.png" id="imgPortada">
-        </div>
-        <form class="col-12">
-            <div class="form-group">
-                <label for="user"> Usuario: </label>
-                <input type="email" id="email" class="control-fromulario" placeholder="Email">
-                <div id="error1"> </div>
+       <div class="col-12 imgPortada"> 
+            <img src="img/e.png">
+        </div> 
+        <h1> Acceder a mi cuenta: </h1>
+          <form class="col-12">
+          <div> 
+            <div id="error1"></div>
+            <div class="input-group flex-nowrap mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="addon-wrapping"><i class="far fa-user form-control-feedback"></i></span>
+              </div>
+                <input type="text" class="form-control" id="user" placeholder="Usuario" aria-label="Usuario">
             </div>
-            <div class="form-group">
-              <label for="pass"> Password: </label>
-              <input type="password" id="password" class="control-fromulario" placeholder="Password">
-              <div id="error2"> </div> 
           </div>
-          <button type="button" class="btn btn-danger" onclick="validarParametros()"> Ingresar </button>
+          <div>
+            <div id="error3"></div>
+            <div class="input-group flex-nowrap mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="addon-wrapping">@</span>
+              </div>
+                <input type="text" class="form-control" id="email" placeholder="Correo" aria-label="Correo">
+            </div>
+          </div>
+          <div> 
+            <div id="error2"> </div>
+            <div class="input-group flex-nowrap mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="addon-wrapping"><i class="fas fa-lock form-control-feedback"></i></span>
+              </div>
+                <input type="password" class="form-control" id="password" placeholder="Contraseña" aria-label="Contraseña"> 
+            </div>
+          </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="recordarme">
+              <label class="form-check-label" for="recordarme"> Recordarme </label>
+            </div>
+          <button type="button" class="btn btn-danger btn-block" onclick="validarParametros()"> Ingresar </button>
           <div class="g-signin2 p-2 " data-onsuccess="onSignIn"> 
             <meta name="google-signin-client_id" content="proyecto-jap-286300.apps.googleusercontent.com">
           </div>
         </form>
         <div class="col-12 forgot">
           <a href="#"> ¿No recuerda su contraseña? </a>
-        </div>
+        </div> 
       </div>
     </div>
   </div>
-
   
   <script src="js/init.js"></script>
   <script src="js/login.js"></script>
