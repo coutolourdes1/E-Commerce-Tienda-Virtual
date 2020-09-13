@@ -3,57 +3,120 @@
 <html lang="en">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <title>eMercado - Todo lo que busques está aquí</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>eMercado - Todo lo que busques está aquí</title>
 
-  <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-  <link href="css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/styles.css" rel="stylesheet">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
-  <nav class="site-header sticky-top py-1 bg-dark">
-    <div class="container d-flex flex-column flex-md-row justify-content-between">
-      <a class="py-2 d-none d-md-inline-block" href="index.html">Inicio</a>
-      <a class="py-2 d-none d-md-inline-block" href="categories.html">Categorías</a>
-      <a class="py-2 d-none d-md-inline-block" href="products.html">Productos</a>
-      <a class="py-2 d-none d-md-inline-block" href="sell.html">Vender</a>
-      <a class="py-2 d-none d-md-inline-block" href="cart.html">Mi carrito</a>
-    </div>
-  </nav>
-  <div class="container p-5">
-    <div class="alert alert-danger" role="alert" style="position: relative; width:auto; top: 0;">
-      <h4 class="alert-heading">¡A trabajar! :)</h4>
-      <p>Esta sección corresponde a: Entrega 3 (Fecha de entrega: 13/09/2020) y Entrega 4 (Fecha de entrega: 20/09/2020).</p>
-      <hr>
-      <p class="mb-0">Para saber qué debes hacer, fijate en la actividad en CREA correspondiente a esta entrega.</p>
-    </div>
-  </div>
-  <footer class="text-muted">
-    <div class="container">
-      <p class="float-right">
-        <a href="#">Volver arriba</a>
-      </p>
-      <p>Este sitio forma parte de Desarrollo Web - JAP - 2020</p>
-      <p>Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p>
-    </div>
-  </footer>
-  <div id="spinner-wrapper">
-    <div class="lds-ring">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-  </div>
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/init.js"></script>
-  <script src="js/product-info.js"></script>
+    <nav class="site-header sticky-top py-1 bg-dark">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+            <a class="py-2 d-none d-md-inline-block" href="index.html">Inicio</a>
+            <a class="py-2 d-none d-md-inline-block" href="categories.html">Categorías</a>
+            <a class="py-2 d-none d-md-inline-block" href="products.html">Productos</a>
+            <a class="py-2 d-none d-md-inline-block" href="sell.html">Vender</a>
+            <a class="py-2 d-none d-md-inline-block" href="cart.html">Mi carrito</a>
+            <a href="my-profile.html"> <img src="img/user.png" class="imgUser">
+                <p class="py-2 d-none d-md-inline-block" id="imprimirUser"></p>
+            </a>
+        </div>
+    </nav>
+    <main role="main">
+        <div class="container mt-5">
+            <h3 id="productName"></h3>
+            <hr class="my-3">
+            <dl>
+                <dt>Descripción</dt>
+                <dd>
+                    <p id="productDescription"></p>
+                </dd>
+                <dt>Costo</dt>
+                <dd>
+                    <p id="productCost"></p>
+                </dd>
+                <dt>Cantidad de vendidos</dt>
+                <dd>
+                    <p id="productsoldCont"></p>
+                </dd>
+
+                <div id="carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-25 mx-auto" src="img/prod1_1.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-25 mx-auto" src="img/prod1_2.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-25 mx-auto" src="img/prod1_3.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-25 mx-auto" src="img/prod1_4.jpg" alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+                </div>
+                </dd>
+            </dl>
+            <a type="button" class="btn btn-light btn-lg btn-block" href="products.html">Ver más productos</a>
+        </div>
+    </main>
+    <div class="container p-5">
+        <div class="form-group">
+            <form id="texto" class="container p-2">
+                <label> Calificación </label>
+                <div id="errorEstrellas"></div>
+                <p class="clasificacion" id="estrellas">
+                    <input id="radio1" type="radio" name="estrellas" value="5" class="estrella1">
+                    <label for="radio1">★</label>
+                    <input id="radio2" type="radio" name="estrellas" value="4" class="estrella2">
+                    <label for="radio2">★</label>
+                    <input id="radio3" type="radio" name="estrellas" value="3" class="estrella3">
+                    <label for="radio3">★</label>
+                    <input id="radio4" type="radio" name="estrellas" value="2" class="estrella4">
+                    <label for="radio4">★</label>
+                    <input id="radio5" type="radio" name="estrellas" value="1" class="estrella5">
+                    <label for="radio5">★</label>
+                </p>
+            </form>
+            <div class="form-group">
+                <label for="formularioComentario"> Comentarios </label>
+                <div id="errorComentario"> </div>
+                <textarea class="form-control col-sm-4" id="IdComentario" rows="5" placeholder="Ingrese su comentario..."></textarea>
+                <button type="button" class="btn btn-danger btn-block col-sm-2 mt-3" onclick="validarFormulario()"> Enviar </button>
+                <div id="mensajecorrecto"> </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div id="coment-list-container"></div>
+        </div>
+        <div id="spinner-wrapper">
+            <div class="lds-ring">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/init.js"></script>
+        <script src="js/product-info.js"></script>
+        <script src="js/addons/rating.js"></script>
 </body>
 
 </html>

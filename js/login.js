@@ -8,20 +8,18 @@ function validarParametros() {
     var valor_password = document.getElementById("password").value;
     var valor_usuario = document.getElementById("user").value;
 
-    if((valor_email == "") && (valor_password == "") && (valor_usuario == "")){
+    if ((valor_email == "") && (valor_password == "") && (valor_usuario == "")) {
         document.getElementById("error1").innerHTML = "Debe ingresar datos en todos los campos";
         email.style.borderColor = "red";
         password.style.borderColor = "red";
         user.style.borderColor = "red";
-
-    }else if(valor_email == ""){
+    } else if (valor_email == "") {
         document.getElementById("error3").innerHTML = "Ingrese correo";
         email.style.borderColor = "red";
-
-    }else if(valor_password == ""){
+    } else if (valor_password == "") {
         document.getElementById("error2").innerHTML = "Ingrese contraseña";
         password.style.borderColor = "red";
-    }else{
+    } else {
 
         var usuario = document.getElementById("user").value;
         sessionStorage.setItem("usuario", usuario);
@@ -29,6 +27,4 @@ function validarParametros() {
         window.location.href = "principal.html";
     }
 }
-document.addEventListener("DOMContentLoaded", function(e){
-});
-
+document.addEventListener("DOMContentLoaded", function(e) {});
