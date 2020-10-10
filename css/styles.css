@@ -223,7 +223,7 @@ body {
     font-size: 20px;
 }
 
-input[type="radio"] {
+.estrella {
     display: none;
 }
 
@@ -252,4 +252,24 @@ input[type="radio"]:checked~label {
 .informacion {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: small;
+}
+
+.opcion_envio {
+    background-color: #66CDAA;
+    border-color: teal;
+    border-radius: 10px;
+}
+
+#cardCostos {
+    background-color: white;
+    opacity: .99;
+    padding: 0 20px;
+    border: #FC3C76 5px solid;
+}
+
+#cardProduct {
+    background-color: white;
+    opacity: .99;
+    padding: 0 20px;
+    border: #32CD32 5px solid;
 }
