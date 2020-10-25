@@ -28,7 +28,6 @@ function validateStars() {
         }
         i++;
     }
-
     if (!formValid) {
         document.getElementById("errorEstrellas").innerHTML = "Debe ingresar su calificacion";
         return formValid;

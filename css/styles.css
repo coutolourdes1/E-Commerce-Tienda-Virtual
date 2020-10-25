@@ -197,7 +197,12 @@ body {
 #error2,
 #error3,
 #errorComentario,
-#errorEstrellas {
+#errorEstrellas,
+#errorTipoEnvio,
+#errorpagocred,
+#errorpagobanc,
+#errorDatosEnvio,
+#faltacompletar {
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
     color: red;
@@ -255,21 +260,29 @@ input[type="radio"]:checked~label {
 }
 
 .opcion_envio {
-    background-color: #66CDAA;
-    border-color: teal;
+    background-color: #32CD32;
+    border-color: greenyellow;
     border-radius: 10px;
 }
 
 #cardCostos {
     background-color: white;
-    opacity: .99;
     padding: 0 20px;
-    border: #FC3C76 5px solid;
+    border: #FD3355 5px solid;
 }
 
-#cardProduct {
+.tarjetas {
+    width: 100%;
+}
+
+#estilocompraexitosa {
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+}
+
+#cardDatos {
     background-color: white;
-    opacity: .99;
     padding: 0 20px;
-    border: #32CD32 5px solid;
+    border: skyblue 3px solid;
 }
