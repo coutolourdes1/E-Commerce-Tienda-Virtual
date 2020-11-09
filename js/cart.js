@@ -248,5 +248,6 @@ function validarDatosBanco() {
         iban.style.borderColor = "green";
 
         $('#compraexitosa2').modal('show');
+
     }
 }
